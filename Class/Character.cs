@@ -1,11 +1,12 @@
-﻿using PacmanWinForms;
+﻿
+using PacmanWinForms;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//igt
 namespace Pacman_Game.Class
 {
     public class Character
