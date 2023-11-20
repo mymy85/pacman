@@ -1,5 +1,4 @@
-﻿using PacmanGaneWF.Class;
-using PacmanGaneWF;
+﻿using PacmanGaneWF;
 using PacmanWinForms;
 using System;
 using System.Collections.Generic;
