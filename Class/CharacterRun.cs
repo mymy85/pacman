@@ -10,40 +10,52 @@ using System.Threading.Tasks;
 
 namespace Pacman_Game.Class
 {
-    public class CharacterRun
+    public abstract class CharacterRun
     {
-        private Point Point = new Point();
-        private int _delay = 70;
+        protected Point Point = new Point();
+        protected int _delay = 70;
         Pacman pacman;
         private GameState State = GameState.GAMEOVER;
         List<Point> wallList = new List<Point>();
         List<Point> boxDoorList = new List<Point>();
-        private Direction[] directions = new Direction[4];
+        protected Direction[] directions = new Direction[4];
         protected frmPacmanGame parentForm;
         protected PacmanBoard board;
+        
+        public int Delay
+        {
+            get { return _delay; }
+            set { _delay = (value < 10) ? 10 : value; }
+        }
         public CharacterRun(frmPacmanGame frm, PacmanBoard b)
         {
             parentForm = frm;
             board = b;
             this.Init();
         }
-        public int Delay
-        {
-            get { return _delay; }
-            set { _delay = (value < 10) ? 10 : value; }
-        }
+
+        public abstract Point[] perimeter();
+
+        public abstract Point[] core();
 
         public virtual void Run()
         {
             State = GameState.GAMERUN;
         }
-        private void Init()
+        //public void setDirection(Direction d)
+        //{
+            
+        //}
+        public abstract void reset();
+        protected virtual void Init()
         {
             boxDoorList = PointLists.BoxDoorPointList();
             wallList = PointLists.BanPointList();
+            /*Phương thức OrderBy trả về một chuỗi mới chứa các phần tử được sắp xếp theo thứ tự tăng dần của X, 
+             và phương thức ThenBy sắp xếp các phần tử có cùng giá trị X theo thứ tự tăng dần của Y.*/
             wallList.OrderBy(p => p.X).ThenBy(p => p.Y);
         }
-        private Point nextPoint(Point P, Direction D)
+        protected Point nextPoint(Point P, Direction D)
         {
             Point nextP = new Point();
             nextP = P;
@@ -67,7 +79,7 @@ namespace Pacman_Game.Class
             }
             return nextP;
         }
-        private void directionsInit()
+        protected void directionsInit()
         {
             directions[0] = Direction.UP;
             directions[1] = Direction.RIGHT;
