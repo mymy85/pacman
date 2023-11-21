@@ -6,15 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//igt
 namespace Pacman_Game.Class
 {
     public class Character
     {
-        private Point Point { get; set; }
-        private Direction Direction { get; set; }
-        private Point[] Perimeter { set; get; } = new Point[12];
-        private Point[] Core { set; get; } = new Point[4];
+        protected Point Point { get; set; }
+        protected Direction Direction { get; set; }
+        protected Point[] Perimeter { set; get; } = new Point[12];
+        protected Point[] Core { set; get; } = new Point[4];
 
         protected int _delay = 70;
 
@@ -24,8 +23,10 @@ namespace Pacman_Game.Class
             this.Direction = direction;
         }
 
-        public virtual Point[] perimeter(Point p)
+        public Point[] perimeter(Point p)
         {
+            /*phương thức này trả về một mảng các điểm tạo thành 'vùng biên' của đối tượng
+             pacman, vùng biên là các điểm tạo thành các cạnh của hình vuông bao quanh pacman*/
             Perimeter[0] = p;
             Perimeter[1] = new Point(p.X + 1, p.Y);
             Perimeter[2] = new Point(p.X + 2, p.Y);
@@ -44,7 +45,7 @@ namespace Pacman_Game.Class
             return Perimeter;
         }
 
-        public virtual Point[] core(Point p)
+        public Point[] core(Point p)
         {
             Core[0] = new Point(p.X + 2, p.Y + 2);
             Core[1] = new Point(p.X + 2, p.Y + 3);
