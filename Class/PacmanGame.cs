@@ -158,11 +158,11 @@ namespace PacmanWinForms
 
         private void Init()
         {
-            wallList = PointLists.BanPointList();
-            dotList = PointLists.DotPointList();
-            boxList = PointLists.BoxPointList();
-            boxDoorList = PointLists.BoxDoorPointList();
-            bonusList = PointLists.BonusPointList();
+            wallList = MapHandler.Instance.GetList(PointListsWrapper.PointListType.Wall);
+            dotList = MapHandler.Instance.GetList(PointListsWrapper.PointListType.Dot);
+            boxList = MapHandler.Instance.GetList(PointListsWrapper.PointListType.Box);
+            boxDoorList = MapHandler.Instance.GetList(PointListsWrapper.PointListType.BoxDoor);
+            bonusList = MapHandler.Instance.GetList(PointListsWrapper.PointListType.Bonus);
 
             State = GameState.GAMEOVER;
 

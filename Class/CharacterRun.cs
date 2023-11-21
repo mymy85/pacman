@@ -39,8 +39,8 @@ namespace Pacman_Game.Class
         }
         private void Init()
         {
-            boxDoorList = PointLists.BoxDoorPointList();
-            wallList = PointLists.BanPointList();
+            boxDoorList = MapHandler.Instance.GetList(PointListsWrapper.PointListType.BoxDoor);
+            wallList = MapHandler.Instance.GetList(PointListsWrapper.PointListType.Wall);
             wallList.OrderBy(p => p.X).ThenBy(p => p.Y);
         }
         private Point nextPoint(Point P, Direction D)
