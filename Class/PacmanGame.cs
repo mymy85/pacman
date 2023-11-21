@@ -11,6 +11,9 @@ using Pacman_Game.Class;
 using PacmanGaneWF;
 
 public delegate void Communicate(Task t, Point P);
+/*
+ 
+ */
 public delegate void CheatCode();
 
 namespace PacmanWinForms
@@ -105,10 +108,10 @@ namespace PacmanWinForms
             {
                 _state = value;
                 Pacman.State = value;
-                RedGhost.ghostState = (GhostState)value;
-                BlueGhost.ghostState = (GhostState)value;
-                YellowGhost.ghostState = (GhostState)value;
-                PinkGhost.ghostState = (GhostState)value;
+                RedGhost.State = value;
+                BlueGhost.State = value;
+                YellowGhost.State = value;
+                PinkGhost.State = value;
             }
         }
 
