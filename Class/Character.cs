@@ -10,8 +10,8 @@ namespace Pacman_Game.Class
 {
     public class Character
     {
-        protected Point Point { get; set; }
-        protected Direction Direction { get; set; }
+        private Point Point { get; set; }
+        private Direction Direction { get; set; }
         protected Point[] Perimeter { set; get; } = new Point[12];
         protected Point[] Core { set; get; } = new Point[4];
 
@@ -27,6 +27,18 @@ namespace Pacman_Game.Class
         {
             /*phương thức này trả về một mảng các điểm tạo thành 'vùng biên' của đối tượng
              pacman, vùng biên là các điểm tạo thành các cạnh của hình vuông bao quanh pacman*/
+            //có thể sử dụng vùng biên để kiểm tra va chạm với các đối tượng khác trong trò chơi
+            /* minh họa vùng biên theo tọa độ Oxy
+             (0, 0) (1, 0) (2, 0) (3, 0) 
+             (3, 0) (3, 1) (3, 2) (3, 3)
+             (3, 3) (2, 3) (1, 3) (0, 3)
+             (0, 0) (0, 1) (0, 2) (0, 3)
+             * * * *
+             *     *
+             *     *
+             * * * * 
+             
+             */
             Perimeter[0] = p;
             Perimeter[1] = new Point(p.X + 1, p.Y);
             Perimeter[2] = new Point(p.X + 2, p.Y);
@@ -47,6 +59,7 @@ namespace Pacman_Game.Class
 
         public Point[] core(Point p)
         {
+            //tạo thành nhân cho các đối tượng Character, là các điểm nằm ở giữa hình vuông
             Core[0] = new Point(p.X + 2, p.Y + 2);
             Core[1] = new Point(p.X + 2, p.Y + 3);
             Core[2] = new Point(p.X + 3, p.Y + 3);
