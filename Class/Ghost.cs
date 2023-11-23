@@ -27,16 +27,17 @@ namespace Pacman_Game.Class
     }
     public class GhostRun : CharacterRun
     {
-        public Direction ghostDirection { get; set; }
+        private Direction ghostDirection { get; set; }
         Task ghostRunner;
-        public GhostState gState { set; get; }
-        public bool collision { get; set; }
+        private GhostState gState { set; get; }
+        private bool collision { get; set; }
         private GhostColor color;
         Ghost ghost;
 
         List<Point> wallList = new List<Point>();
         List<Point> boxDoorList = new List<Point>();
         List<Point> boxList = new List<Point>();
+
         public GameState State = GameState.GAMEOVER;
         public GhostRun(frmPacmanGame frm, PacmanBoard b, GhostColor color) : base(frm, b)
         {
