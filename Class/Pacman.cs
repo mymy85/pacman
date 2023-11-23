@@ -18,8 +18,8 @@ namespace PacmanWinForms
 
         public Point Point { get; set; }
         public Direction Direction { get; set; }
-        private Point[] Perimeter = new Point[12];
-        private Point[] Core = new Point[4];
+        //private Point[] Perimeter = new Point[12];
+        //private Point[] Core = new Point[4];
 
         public Pacman(Point point, Direction direction) : base(point, direction)
         {
