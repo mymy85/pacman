@@ -127,9 +127,6 @@
   <data name="Bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bell1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bell.psd;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="BlueGhost" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BlueGhost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,9 +163,6 @@
   <data name="Cherry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cherry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cherry1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cherry.psd;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="eyesDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyesDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,9 +174,6 @@
   </data>
   <data name="eyesUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyesUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fruit.psd;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Galaxian_Boss" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Galaxian Boss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,20 +199,35 @@
   <data name="Melon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Melon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Melon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Melon.psd;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="pacman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pacman.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pacman1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pacman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PacmanWinForms_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PacmanWinForms.exe.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
   <data name="Pacman_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pacman 3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pacman_Eating_Ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman_Eating_Ghost.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pacman_Extra_Live" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman_Extra_Live.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pacman_Intermission" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman_Intermission.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pacman_Opening_Song" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman_Opening_Song.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pacman_Siren" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman_Siren.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pacman_Waka_Waka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman_Waka_Waka.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pacman_Waka_Waka_Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman_Waka_Waka_Cut.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PinkGost" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PinkGost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -270,6 +276,9 @@
   </data>
   <data name="RedGosUp2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedGosUp2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sound_Effect__6_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sound Effect (6).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spritesheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spritesheet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

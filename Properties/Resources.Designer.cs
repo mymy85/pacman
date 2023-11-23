@@ -101,16 +101,6 @@ namespace PacmanGaneWF.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Bell1 {
-            get {
-                object obj = ResourceManager.GetObject("Bell1", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap BlueGhost {
@@ -231,16 +221,6 @@ namespace PacmanGaneWF.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Cherry1 {
-            get {
-                object obj = ResourceManager.GetObject("Cherry1", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap eyesDown {
@@ -277,16 +257,6 @@ namespace PacmanGaneWF.Properties {
             get {
                 object obj = ResourceManager.GetObject("eyesUp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Fruit {
-            get {
-                object obj = ResourceManager.GetObject("Fruit", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         
@@ -371,16 +341,6 @@ namespace PacmanGaneWF.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Melon1 {
-            get {
-                object obj = ResourceManager.GetObject("Melon1", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap pacman {
@@ -401,35 +361,75 @@ namespace PacmanGaneWF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Pacman_Eating_Ghost {
+            get {
+                return ResourceManager.GetStream("Pacman_Eating_Ghost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Pacman_Extra_Live {
+            get {
+                return ResourceManager.GetStream("Pacman_Extra_Live", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Pacman_Intermission {
+            get {
+                return ResourceManager.GetStream("Pacman_Intermission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Pacman_Opening_Song {
+            get {
+                return ResourceManager.GetStream("Pacman_Opening_Song", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Pacman_Siren {
+            get {
+                return ResourceManager.GetStream("Pacman_Siren", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Pacman_Waka_Waka {
+            get {
+                return ResourceManager.GetStream("Pacman_Waka_Waka", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Pacman_Waka_Waka_Cut {
+            get {
+                return ResourceManager.GetStream("Pacman_Waka_Waka_Cut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap pacman1 {
             get {
                 object obj = ResourceManager.GetObject("pacman1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///
-        ///
-        ///
-        ///
-        ///
-        ///&lt;!DOCTYPE html&gt;
-        ///&lt;html lang=&quot;en&quot;&gt;
-        ///  &lt;head&gt;
-        ///    &lt;meta charset=&quot;utf-8&quot;&gt;
-        ///
-        ///
-        ///
-        ///  &lt;link crossorigin=&quot;anonymous&quot; href=&quot;https://assets-cdn.github.com/assets/frameworks-81a59bf26d881d29286674f6deefe779c444382fff322085b50ba455460ccae5.css&quot; integrity=&quot;sha256-gaWb8m2IHSkoZnT23u/necREOC//MiCFtQukVUYMyuU=&quot; media=&quot;all&quot; rel=&quot;stylesheet&quot; /&gt;
-        ///  &lt;link crossorigin=&quot;anonymous&quot; href=&quot;https://assets-cdn.github.com/assets/github-e25664a6025176ef5d82bb6c21b5f4d3e5a515f49a0bc4b423f009a6492af4fc.css&quot; integrity=&quot;sha256-4lZkpgJRdu9d [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string PacmanWinForms_exe {
-            get {
-                return ResourceManager.GetString("PacmanWinForms_exe", resourceCulture);
             }
         }
         
@@ -590,6 +590,15 @@ namespace PacmanGaneWF.Properties {
             get {
                 object obj = ResourceManager.GetObject("RedGosUp2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Sound_Effect__6_ {
+            get {
+                return ResourceManager.GetStream("Sound_Effect__6_", resourceCulture);
             }
         }
         
