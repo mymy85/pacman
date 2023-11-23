@@ -30,137 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPacmanGame));
-            this.pnlSc = new System.Windows.Forms.Panel();
-            this.lblLScore = new System.Windows.Forms.Label();
-            this.lblScore = new System.Windows.Forms.Label();
-            this.pnlLvl = new System.Windows.Forms.Panel();
-            this.lblLVL = new System.Windows.Forms.Label();
-            this.lblLVLValue = new System.Windows.Forms.Label();
-            this.pnlHighScore = new System.Windows.Forms.Panel();
-            this.lblHightScore = new System.Windows.Forms.Label();
-            this.lblHScoreValue = new System.Windows.Forms.Label();
             this.pnlBoard = new System.Windows.Forms.Panel();
             this.lblPosition = new System.Windows.Forms.Label();
             this.lblGhostDelay = new System.Windows.Forms.Label();
             this.lblDelay = new System.Windows.Forms.Label();
             this.tmrClock = new System.Windows.Forms.Timer(this.components);
-            this.pnlSc.SuspendLayout();
-            this.pnlLvl.SuspendLayout();
-            this.pnlHighScore.SuspendLayout();
+            this.pnlDisplay = new System.Windows.Forms.Panel();
+            this.pnlHighScore = new System.Windows.Forms.Panel();
+            this.lblHightScore = new System.Windows.Forms.Label();
+            this.lblHScoreValue = new System.Windows.Forms.Label();
+            this.pnlLvl = new System.Windows.Forms.Panel();
+            this.lblLVL = new System.Windows.Forms.Label();
+            this.lblLVLValue = new System.Windows.Forms.Label();
+            this.pnlSc = new System.Windows.Forms.Panel();
+            this.lblLScore = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
             this.pnlBoard.SuspendLayout();
+            this.pnlDisplay.SuspendLayout();
+            this.pnlHighScore.SuspendLayout();
+            this.pnlLvl.SuspendLayout();
+            this.pnlSc.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlSc
-            // 
-            this.pnlSc.Controls.Add(this.lblLScore);
-            this.pnlSc.Controls.Add(this.lblScore);
-            this.pnlSc.Location = new System.Drawing.Point(103, 1);
-            this.pnlSc.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlSc.Name = "pnlSc";
-            this.pnlSc.Size = new System.Drawing.Size(109, 71);
-            this.pnlSc.TabIndex = 17;
-            // 
-            // lblLScore
-            // 
-            this.lblLScore.AutoSize = true;
-            this.lblLScore.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblLScore.ForeColor = System.Drawing.Color.White;
-            this.lblLScore.Location = new System.Drawing.Point(16, 25);
-            this.lblLScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLScore.Name = "lblLScore";
-            this.lblLScore.Size = new System.Drawing.Size(70, 23);
-            this.lblLScore.TabIndex = 2;
-            this.lblLScore.Text = "Score";
-            // 
-            // lblScore
-            // 
-            this.lblScore.AutoSize = true;
-            this.lblScore.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblScore.ForeColor = System.Drawing.Color.White;
-            this.lblScore.Location = new System.Drawing.Point(43, 48);
-            this.lblScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(22, 23);
-            this.lblScore.TabIndex = 3;
-            this.lblScore.Text = "0";
-            this.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlLvl
-            // 
-            this.pnlLvl.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pnlLvl.Controls.Add(this.lblLVL);
-            this.pnlLvl.Controls.Add(this.lblLVLValue);
-            this.pnlLvl.Location = new System.Drawing.Point(293, 1);
-            this.pnlLvl.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlLvl.Name = "pnlLvl";
-            this.pnlLvl.Size = new System.Drawing.Size(109, 71);
-            this.pnlLvl.TabIndex = 18;
-            // 
-            // lblLVL
-            // 
-            this.lblLVL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLVL.AutoSize = true;
-            this.lblLVL.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblLVL.ForeColor = System.Drawing.Color.White;
-            this.lblLVL.Location = new System.Drawing.Point(16, 25);
-            this.lblLVL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLVL.Name = "lblLVL";
-            this.lblLVL.Size = new System.Drawing.Size(70, 23);
-            this.lblLVL.TabIndex = 4;
-            this.lblLVL.Text = "Level";
-            // 
-            // lblLVLValue
-            // 
-            this.lblLVLValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLVLValue.AutoSize = true;
-            this.lblLVLValue.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblLVLValue.ForeColor = System.Drawing.Color.White;
-            this.lblLVLValue.Location = new System.Drawing.Point(39, 48);
-            this.lblLVLValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLVLValue.Name = "lblLVLValue";
-            this.lblLVLValue.Size = new System.Drawing.Size(22, 23);
-            this.lblLVLValue.TabIndex = 5;
-            this.lblLVLValue.Text = "1";
-            // 
-            // pnlHighScore
-            // 
-            this.pnlHighScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlHighScore.Controls.Add(this.lblHightScore);
-            this.pnlHighScore.Controls.Add(this.lblHScoreValue);
-            this.pnlHighScore.Location = new System.Drawing.Point(489, 1);
-            this.pnlHighScore.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlHighScore.Name = "pnlHighScore";
-            this.pnlHighScore.Size = new System.Drawing.Size(109, 71);
-            this.pnlHighScore.TabIndex = 19;
-            // 
-            // lblHightScore
-            // 
-            this.lblHightScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblHightScore.AutoSize = true;
-            this.lblHightScore.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblHightScore.ForeColor = System.Drawing.Color.White;
-            this.lblHightScore.Location = new System.Drawing.Point(16, 25);
-            this.lblHightScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblHightScore.Name = "lblHightScore";
-            this.lblHightScore.Size = new System.Drawing.Size(70, 23);
-            this.lblHightScore.TabIndex = 6;
-            this.lblHightScore.Text = "Lives";
-            // 
-            // lblHScoreValue
-            // 
-            this.lblHScoreValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblHScoreValue.AutoSize = true;
-            this.lblHScoreValue.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblHScoreValue.ForeColor = System.Drawing.Color.White;
-            this.lblHScoreValue.Location = new System.Drawing.Point(43, 48);
-            this.lblHScoreValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblHScoreValue.Name = "lblHScoreValue";
-            this.lblHScoreValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblHScoreValue.Size = new System.Drawing.Size(22, 23);
-            this.lblHScoreValue.TabIndex = 7;
-            this.lblHScoreValue.Text = "3";
             // 
             // pnlBoard
             // 
@@ -220,6 +110,129 @@
             // 
             this.tmrClock.Enabled = true;
             // 
+            // pnlDisplay
+            // 
+            this.pnlDisplay.Controls.Add(this.pnlHighScore);
+            this.pnlDisplay.Controls.Add(this.pnlLvl);
+            this.pnlDisplay.Controls.Add(this.pnlSc);
+            this.pnlDisplay.Location = new System.Drawing.Point(113, -6);
+            this.pnlDisplay.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlDisplay.Name = "pnlDisplay";
+            this.pnlDisplay.Size = new System.Drawing.Size(455, 74);
+            this.pnlDisplay.TabIndex = 21;
+            // 
+            // pnlHighScore
+            // 
+            this.pnlHighScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlHighScore.Controls.Add(this.lblHightScore);
+            this.pnlHighScore.Controls.Add(this.lblHScoreValue);
+            this.pnlHighScore.Location = new System.Drawing.Point(345, 0);
+            this.pnlHighScore.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlHighScore.Name = "pnlHighScore";
+            this.pnlHighScore.Size = new System.Drawing.Size(109, 71);
+            this.pnlHighScore.TabIndex = 17;
+            // 
+            // lblHightScore
+            // 
+            this.lblHightScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHightScore.AutoSize = true;
+            this.lblHightScore.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblHightScore.ForeColor = System.Drawing.Color.White;
+            this.lblHightScore.Location = new System.Drawing.Point(16, 25);
+            this.lblHightScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHightScore.Name = "lblHightScore";
+            this.lblHightScore.Size = new System.Drawing.Size(70, 23);
+            this.lblHightScore.TabIndex = 6;
+            this.lblHightScore.Text = "Lives";
+            // 
+            // lblHScoreValue
+            // 
+            this.lblHScoreValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHScoreValue.AutoSize = true;
+            this.lblHScoreValue.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblHScoreValue.ForeColor = System.Drawing.Color.White;
+            this.lblHScoreValue.Location = new System.Drawing.Point(43, 48);
+            this.lblHScoreValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHScoreValue.Name = "lblHScoreValue";
+            this.lblHScoreValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblHScoreValue.Size = new System.Drawing.Size(22, 23);
+            this.lblHScoreValue.TabIndex = 7;
+            this.lblHScoreValue.Text = "3";
+            // 
+            // pnlLvl
+            // 
+            this.pnlLvl.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlLvl.Controls.Add(this.lblLVL);
+            this.pnlLvl.Controls.Add(this.lblLVLValue);
+            this.pnlLvl.Location = new System.Drawing.Point(176, 0);
+            this.pnlLvl.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlLvl.Name = "pnlLvl";
+            this.pnlLvl.Size = new System.Drawing.Size(109, 71);
+            this.pnlLvl.TabIndex = 16;
+            // 
+            // lblLVL
+            // 
+            this.lblLVL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLVL.AutoSize = true;
+            this.lblLVL.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblLVL.ForeColor = System.Drawing.Color.White;
+            this.lblLVL.Location = new System.Drawing.Point(16, 25);
+            this.lblLVL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLVL.Name = "lblLVL";
+            this.lblLVL.Size = new System.Drawing.Size(70, 23);
+            this.lblLVL.TabIndex = 4;
+            this.lblLVL.Text = "Level";
+            // 
+            // lblLVLValue
+            // 
+            this.lblLVLValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLVLValue.AutoSize = true;
+            this.lblLVLValue.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblLVLValue.ForeColor = System.Drawing.Color.White;
+            this.lblLVLValue.Location = new System.Drawing.Point(39, 48);
+            this.lblLVLValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLVLValue.Name = "lblLVLValue";
+            this.lblLVLValue.Size = new System.Drawing.Size(22, 23);
+            this.lblLVLValue.TabIndex = 5;
+            this.lblLVLValue.Text = "1";
+            // 
+            // pnlSc
+            // 
+            this.pnlSc.Controls.Add(this.lblLScore);
+            this.pnlSc.Controls.Add(this.lblScore);
+            this.pnlSc.Location = new System.Drawing.Point(0, 0);
+            this.pnlSc.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlSc.Name = "pnlSc";
+            this.pnlSc.Size = new System.Drawing.Size(109, 71);
+            this.pnlSc.TabIndex = 15;
+            // 
+            // lblLScore
+            // 
+            this.lblLScore.AutoSize = true;
+            this.lblLScore.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblLScore.ForeColor = System.Drawing.Color.White;
+            this.lblLScore.Location = new System.Drawing.Point(16, 25);
+            this.lblLScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLScore.Name = "lblLScore";
+            this.lblLScore.Size = new System.Drawing.Size(70, 23);
+            this.lblLScore.TabIndex = 2;
+            this.lblLScore.Text = "Score";
+            // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblScore.ForeColor = System.Drawing.Color.White;
+            this.lblScore.Location = new System.Drawing.Point(43, 48);
+            this.lblScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(22, 23);
+            this.lblScore.TabIndex = 3;
+            this.lblScore.Text = "0";
+            this.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmPacmanGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -227,10 +240,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 815);
+            this.Controls.Add(this.pnlDisplay);
             this.Controls.Add(this.pnlBoard);
-            this.Controls.Add(this.pnlHighScore);
-            this.Controls.Add(this.pnlLvl);
-            this.Controls.Add(this.pnlSc);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -246,33 +258,34 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmPacmanGame_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPacmanGame_KeyDown);
             this.Resize += new System.EventHandler(this.frmPacmanGame_Resize);
-            this.pnlSc.ResumeLayout(false);
-            this.pnlSc.PerformLayout();
-            this.pnlLvl.ResumeLayout(false);
-            this.pnlLvl.PerformLayout();
-            this.pnlHighScore.ResumeLayout(false);
-            this.pnlHighScore.PerformLayout();
             this.pnlBoard.ResumeLayout(false);
             this.pnlBoard.PerformLayout();
+            this.pnlDisplay.ResumeLayout(false);
+            this.pnlHighScore.ResumeLayout(false);
+            this.pnlHighScore.PerformLayout();
+            this.pnlLvl.ResumeLayout(false);
+            this.pnlLvl.PerformLayout();
+            this.pnlSc.ResumeLayout(false);
+            this.pnlSc.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlSc;
-        private System.Windows.Forms.Label lblLScore;
-        private System.Windows.Forms.Label lblScore;
-        private System.Windows.Forms.Panel pnlLvl;
-        private System.Windows.Forms.Label lblLVL;
-        private System.Windows.Forms.Label lblLVLValue;
-        private System.Windows.Forms.Panel pnlHighScore;
-        private System.Windows.Forms.Label lblHightScore;
-        private System.Windows.Forms.Label lblHScoreValue;
         private System.Windows.Forms.Panel pnlBoard;
         private System.Windows.Forms.Label lblPosition;
         private System.Windows.Forms.Label lblGhostDelay;
         private System.Windows.Forms.Label lblDelay;
         private System.Windows.Forms.Timer tmrClock;
+        private System.Windows.Forms.Panel pnlDisplay;
+        private System.Windows.Forms.Panel pnlHighScore;
+        private System.Windows.Forms.Label lblHightScore;
+        private System.Windows.Forms.Label lblHScoreValue;
+        private System.Windows.Forms.Panel pnlLvl;
+        private System.Windows.Forms.Label lblLVL;
+        private System.Windows.Forms.Label lblLVLValue;
+        private System.Windows.Forms.Panel pnlSc;
+        private System.Windows.Forms.Label lblLScore;
+        private System.Windows.Forms.Label lblScore;
     }
 }
